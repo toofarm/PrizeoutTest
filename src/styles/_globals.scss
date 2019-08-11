@@ -1,0 +1,176 @@
+/*
+APP COLORS
+*/
+
+$navBackground: #373E5C;
+$headerText: #566481;
+$mainBackground: #F7FCFF;
+$waveBlue: #F2F3FF;
+$mainBodyText: #808080;
+$greenBtnBackground: #5CC63C;
+$formBackground: #FBFEFF;
+$formInputBorder: #A5A4A4;
+$formInputGrey: #939393;
+$radioSelectedBlue: #5069A0;
+$subtleShadow: 0px 1px 2px #D6D6D6;
+$softBlue: #AFC1DE;
+
+
+/*
+APP STYLES
+*/
+
+$standardShadow: 0px 3px 6px rgb(156, 155, 155);
+$headerGradient: linear-gradient(90deg, rgba(58,134,191,1) 0%, rgba(55,118,167,1) 100%);
+
+/*
+SHARED CLASSES
+*/
+
+%prompt-btn {
+    background-color: $greenBtnBackground;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px rgba(156, 155, 155, 0.7);
+    color: white;
+    font-size: 17px;
+    padding: 7px 17px;
+    margin: 0 1.2em;
+    transition: 0.2s all ease-in-out;
+}
+
+%prompt-btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(156, 155, 155, 1);
+}
+
+%form-subsection {
+    padding: 30px;
+    text-align: left;
+    border-bottom: 1px solid #CCC;
+    h3 {
+        color: $headerText;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 2.5em;
+    }
+}
+
+%form-entry {
+    margin-left: 27px;
+    display: grid;
+    grid-template-columns: 33% 66%;
+    .inner-form-wrap-label {
+        justify-self: end;
+        align-self: center;
+        display: flex;
+        label {
+            display: inline-block;
+            align-self: center;
+            color: $headerText;
+            font-size: 12px;
+        }
+        img {
+            align-self: center;
+            transition: 0.2s all ease-in-out;
+            padding-left: 5px;
+        }
+        img:hover {
+            cursor: pointer;
+        }
+    }
+    .inner-form-wrap-input {
+        padding-left: 12px;
+        position: relative;
+        .radio-container {
+            display: inline-block;
+            box-shadow: $subtleShadow;
+            .fake-radio {
+                display: inline-block;
+                background-color: #F8F8F8;
+                padding: 7px 28px;
+                font-size: 12px;
+                color: #808080;
+                border-top: 0.5px solid $formInputBorder;
+                border-bottom: 0.5px solid $formInputBorder;
+                border-left: 0.5px solid $formInputBorder;
+                transition: 0.2s all ease-in-out;
+            }
+            .first {
+                padding: 7px 12px;
+            }
+            .last {
+                border-right: 0.5px solid $formInputBorder;
+            }
+            .fake-radio:hover {
+                cursor: pointer;
+                background-color: rgb(236, 233, 233);
+            }
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            input:checked ~ .fake-radio {
+                color: white;
+                background-color: $radioSelectedBlue;
+            }
+        }
+    }
+    input {
+        display: inline-block;
+        align-self: center;
+        font-size: 12px;
+        color: #444;
+    }
+    input::placeholder {
+        color: $formInputGrey;
+    }
+    input[type="text"] {
+        padding: 10px;
+        border: 0.5px solid $formInputBorder;
+        width: 200px;
+        box-shadow: $subtleShadow;
+    }
+    input[type="number"] {
+        padding: 10px;
+        border: 0.5px solid $formInputBorder;
+        width: 66px;
+        color: $formInputGrey;
+        box-shadow: $subtleShadow;
+        text-align: center;
+    }
+    select { 
+        align-self: center;
+        color: $formInputGrey;
+        display: inline-block;
+        padding: 10px !important;
+        max-width: 100%; 
+        width: 220px;
+        height: auto !important; 
+        border-radius: 0;
+        border: 0.5px solid $formInputBorder;
+        background: url("http://www.clipartbest.com/cliparts/yco/GM9/ycoGM9dcE.png") right center no-repeat;  
+        background-size: 17px 17px;
+        background-color: #fff; 
+        background-position: 190px;
+        font-size: 12px; 
+        line-height: 16px !important; 
+        appearance: none; 
+        -webkit-appearance: none; 
+        -moz-appearance: none; 
+        box-shadow: $subtleShadow;
+        option { 
+            color: $formInputGrey;
+            padding: 0 4px; 
+        }
+    }
+    .small-select {
+        width: 50px;
+        background-size: 12px 12px;
+        background-position: 30px;
+    }
+}
+
+.form-entry-wrap:not(:last-child) {
+    margin-bottom: 2.5em;
+}

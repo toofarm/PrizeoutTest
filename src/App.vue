@@ -1,28 +1,69 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="wave"></div>
+    <nav-bar></nav-bar>
+    <main-body></main-body>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+import MainBody from './components/MainBody.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    NavBar,
+    MainBody
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "./styles/_globals.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans SemiBold', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: $mainBodyText;
+  height: 100vh;
+  background-color: $mainBackground;
+  height: 100vh;
+  width: 100%;
+  #wave {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: $waveBlue;
+    margin-top: 200px;
+  }
+  #wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 100%;
+    height: 80px;
+    background-color: $mainBackground;
+    top: 40px;
+  }
+  #wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 800px;
+    height: 70px;
+    background-color: $waveBlue;
+    left: 0;
+    top: 27px;
+  }
 }
 </style>
