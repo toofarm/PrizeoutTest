@@ -1,7 +1,8 @@
 <template>
+  <div class="banner-wrap">
+    <vue-slide-up-down :active="open" :duration="800">
         <div 
-        class="banner"
-        v-if="open">
+        class="banner">
             <div class="banner-inner">
                 <h2>
                     Hi, it looks like you're new here. Would you like a tour?
@@ -17,9 +18,11 @@
             </div>
             <div id="close-banner"
             @click="open = !open">
-                X
+                <font-awesome-icon icon="times" />
             </div>
         </div>
+      </vue-slide-up-down>
+    </div>
 </template>
 
 <script>
@@ -34,7 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/_globals.scss";
+@import "../../styles/_globals.scss";
 
 .banner {
   width: 100%;
@@ -44,7 +47,6 @@ export default {
   text-align: center;
   box-shadow: 0px 2px 4px rgb(156, 155, 155);
   box-sizing: border-box;
-  position: fixed;
   z-index: 550;
   .banner-inner {
     align-self: center;

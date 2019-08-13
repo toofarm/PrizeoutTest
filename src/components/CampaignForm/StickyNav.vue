@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/_globals.scss";
+@import "../../styles/_globals.scss";
 
 .sticky-nav {
     grid-row-start: 2;
@@ -49,7 +49,7 @@ export default {
     max-width: 176px;
     position: fixed;
     .top-border {
-         background: linear-gradient(90deg, rgba(58,134,191,1) 0%, rgba(55,118,167,1) 100%);
+         background: $headerGradient;
          height: 7px;
     }
 }

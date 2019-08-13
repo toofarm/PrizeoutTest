@@ -4,7 +4,7 @@
       <div class="form-entry-wrap">
           <div class="inner-form-wrap-label">
             <label for="cpa">CPA</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="inner-form-wrap-input">
             <input id="cpa" placeholder="$0.00" type="number" v-model="cpa" />
@@ -16,7 +16,7 @@
       <div class="form-entry-wrap">
           <div class="inner-form-wrap-label">
             <label for="cpa">CPR %</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="inner-form-wrap-input">
             <input id="cpr" placeholder="0%" type="number" v-model="cpr" />
@@ -28,7 +28,7 @@
       <div class="form-entry-wrap">
           <div class="inner-form-wrap-label">
             <label for="budget">Max Budget</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="inner-form-wrap-input">
             <input id="budget" placeholder="00.00" type="number" v-model="budget" />
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/_globals.scss";
+@import "../../styles/_globals.scss";
 
 .campaign-form-subsection {
     @extend %form-subsection;

@@ -4,7 +4,7 @@
       <div class="form-entry-wrap">
           <div class="inner-form-wrap-label">
             <label for="audience-creation">Audience Creation</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="inner-form-wrap-input">
             <label for="audience-creation" class="dropdown-label">
@@ -19,7 +19,7 @@
       <div class="form-entry-wrap">
           <div class="inner-form-wrap-label">
             <label for="audience-name">Audience Name</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="inner-form-wrap-input">
             <input type="text" id="audience-name" v-model="audienceName" placeholder="Audience 1" />
@@ -28,7 +28,7 @@
       <div class="form-entry-wrap">
           <div class="inner-form-wrap-label">
             <label for="audience-name">User Targeting</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="inner-form-wrap-input">
             <label class="radio-container">
@@ -49,7 +49,7 @@
       <div class="form-entry-wrap">
           <div class="inner-form-wrap-label">
             <label for="audience-creation">Age Range</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="inner-form-wrap-input">
             <select id="age-select-lower"
@@ -84,7 +84,7 @@
       <div class="form-entry-wrap">
           <div class="inner-form-wrap-label">
             <label for="audience-name">Gender</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="inner-form-wrap-input">
             <label class="radio-container">
@@ -105,7 +105,7 @@
       <div class="form-entry-wrap two-row">
           <div class="inner-form-wrap-label">
             <label for="audience-name">Target Location</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="text-box-wrap">
                 <input type="text" 
@@ -139,7 +139,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/_globals.scss";
+@import "../../styles/_globals.scss";
 
 .campaign-form-subsection {
     @extend %form-subsection;

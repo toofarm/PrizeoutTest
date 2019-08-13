@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/_globals.scss";
+@import "../../styles/_globals.scss";
 
 ul {
     list-style: none;
@@ -55,6 +55,12 @@ ul {
         svg {
             align-self: center;
         }
+    }
+    a {
+        transition: all 0.2s ease-in-out;
+    }
+    a:hover {
+        transform: scale(1.1);
     }
 }
 

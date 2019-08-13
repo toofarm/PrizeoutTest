@@ -1,18 +1,15 @@
 <template>
   <main>
-      <prompt-banner></prompt-banner>
       <form-grid></form-grid>
   </main>
 </template>
 
 <script>
-import PromptBanner from './PromptBanner.vue'
-import FormGrid from './FormGrid.vue'
+import FormGrid from './CampaignForm/FormGrid.vue'
 
 export default {
   name: "MainBody",
   components: {
-      PromptBanner,
       FormGrid
   }
 };

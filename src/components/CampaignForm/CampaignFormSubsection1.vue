@@ -4,7 +4,7 @@
       <div class="form-entry-wrap">
           <div class="inner-form-wrap-label">
             <label for="campaign-name">Campaign Name</label>
-            <img alt="Info icon" src="../assets/i Icon.svg" />
+            <img alt="Info icon" src="../../assets/i Icon.svg" />
           </div>
           <div class="inner-form-wrap-input">
             <input id="campaign-name" placeholder="NFL_Week3" type="text" v-model="campaign" />
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/_globals.scss";
+@import "../../styles/_globals.scss";
 
 .campaign-form-subsection {
     @extend %form-subsection;
